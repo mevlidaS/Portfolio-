@@ -1,0 +1,30 @@
+footer{
+    width: 100%;
+    height: 291px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    span{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24.2px;
+        text-align: center;
+    }
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 1740px;
+    height: 69px;
+}

@@ -1,0 +1,32 @@
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 117px;
+    
+
+    img{
+        width: 64px;
+        height: 69px;
+    }
+
+}
+
+a{
+    text-decoration: none;
+    color:#FF5959;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 120px;
+    height: 32px;
+
+    &:hover{
+       color: #FF5959;
+       font-weight: 700;
+
+    }
+}
