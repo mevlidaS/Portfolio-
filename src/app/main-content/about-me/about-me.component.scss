@@ -3,7 +3,7 @@ div{
     height:632px;
     width: 1440px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     div{
         display: flex;
@@ -26,7 +26,7 @@ div{
 
         }
 
-        button{
+        a{
             width: auto;
             height: 58px;
             top: 1472px;
@@ -50,15 +50,11 @@ div{
 
             &:hover{
                
-                animation-duration: 0ms;
-                animation-timing-function: ease-out;
-                animation-duration: 100ms;
-                background-color:gradient(#FF5959
-                100%
-                #FF5959
-                100%
-                #DE0000);
+                animation: gradient-animation 0.05s ease-in-out forwards;
                 color: white;
+                transform: scale(1.1);
+                background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
 
             }
 
@@ -66,12 +62,29 @@ div{
 
 }
 
+// >a {
+//     text-decoration: none;
+//     border: 2px solid #5988FF;
+//     border-radius: 10px;
+//     background-color: white;
+//     color: #5988FF;
+//     padding: 15px 30px;
+//     font-size: 23px;
+//     box-shadow: 5px 5px 15px 0px #00000026;
+//     cursor: pointer;
+
+//     &:hover {
+//         color: #FFFFFF;
+//         transform: scale(1.1);
+//         animation: gradient-animation 0.05s ease-in-out forwards;
+//     }
+
 span{
     width: 606px;
     height: 242px;
     position: absolute;
     top: 1307px;
-    left: 92px;
+    left: 100px;
     gap: 0px;
     opacity: 0px;
     font-size: 121px;
