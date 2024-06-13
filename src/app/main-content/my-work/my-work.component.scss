@@ -22,7 +22,7 @@ section{
         top: 2580px;
         left: 100px;
         color: black;
-        font-size: 24px;
+        font-size: 23px;
         line-height: 27.6px;
 
     }
@@ -30,19 +30,51 @@ section{
    
 }
 
-.circle_first{
+.circle_1{
     position: absolute;
     left: 563px;
-    top: 2335px;
+    top: 2350px;
     width: 110px;
     height: 110px;
 }
 
-.circle_second{
+.circle_2{
     width: 183px;
     height: 183px;
     position: absolute;
-    left: 1157px;
+    right: 500px;
     top: 2485px;
+}
+
+.circle_3 {
+    width: 393px;
+    height: 393px;
+    position: absolute;
+    top: 2862px;
+    left: -200px;
+}
+
+.circle_4 {
+    width: 652px;
+    height: 652px;
+    position: absolute;
+    top: 3147px;
+    right: 0px;
+}
+
+.circle_5 {
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    top: 3695px;
+    left: 100px;
+}
+
+.circle_6 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top:4135px;
+    left: 620px;
 }
 

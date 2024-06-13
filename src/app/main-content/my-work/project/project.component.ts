@@ -23,9 +23,9 @@ export class ProjectComponent {
       title: 'Join',
       technologies: ['JavaScript', 'HTML', 'CSS'],
       description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      linkLiveTest: '',
-      linkGithub: '',
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
+      linkLiveTest: 'https://join.mevlida-salendrkovic.de/index.html',
+      linkGithub: 'https://github.com/Rondarik/Join4',
       isReversed: false,
     },
     {
@@ -33,18 +33,18 @@ export class ProjectComponent {
       title: 'El Pollo Loco',
       technologies: ['JavaScript', 'HTML', 'CSS'],
       description:
-        'A Slack clone app that facilitates smooth team communication and collaboration through messaging, file sharing, and customizable channels to enhance workplace efficiency.',
-      linkLiveTest: '',
-      linkGithub: '',
+        'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      linkLiveTest: 'https://el-pollo-loco.mevlida-salendrkovic.de/index.html',
+      linkGithub: 'https://github.com/mevlidaS/El-Pollo-Loco',
       isReversed: true,
     },
     {
       src: './assets/img/pokedex.svg',
       title: 'Pokedex',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript', 'HTML', 'CSS', 'API'],
       description:
-        'A Slack clone app that facilitates smooth team communication and collaboration through messaging, file sharing, and customizable channels to enhance workplace efficiency.',
-      linkLiveTest: '',
+        'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      linkLiveTest: 'https://pokedex.mevlida-salendrkovic.de/index.html',
       linkGithub: '',
       isReversed: false,
     },

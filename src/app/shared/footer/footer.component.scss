@@ -59,6 +59,7 @@ footer{
             text-decoration: none;
             position: relative;
             cursor: pointer;
+        
     
             &::after {
                 content: '';
@@ -70,16 +71,19 @@ footer{
                 opacity: 0;
                 background-color: white;
                 transition: left 0.3s ease;
+               
             }
     
             &:hover::after {
                 opacity: 1;
                 left: 50%;
                 transform: translateX(-50%);
+                
             }
     
             &:hover {
                 font-weight: 600;
+            
             }
         }
     }

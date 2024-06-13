@@ -2,17 +2,16 @@
     <div
       [ngClass]="{ project_container: true, reversed: project.isReversed }">
       <div class="left_side">
-        <img src="{{ project.src }}" alt="" />
+        <a href="{{ project.linkLiveTest }}" target="_blank"></a><img src="{{ project.src }}" alt="" />
       </div>
       <div class="right_side">
         <h2 class="baloo">{{ project.title }}</h2>
         <h3 class="montserrat">{{ project.technologies }}</h3>
-        <p>
+        <p class="montserrat">
           {{ project.description }}
         </p>
         <div class="button_container">
-          <button>Live test</button>
-          <button>GitHub</button>
+          <a href="{{ project.linkGithub}}" target="_blank"><button>GitHub</button></a>
         </div>
       </div>
     </div>

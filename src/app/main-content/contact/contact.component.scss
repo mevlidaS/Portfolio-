@@ -2,6 +2,7 @@ section{
     width: 100%;
     height: 746px;
     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #FFEAEA 91.39%);
+    margin-top: 350px;
 
 
     h1{     
@@ -70,6 +71,10 @@ section{
                 border: 2px solid #FF5959;
             }
 
+            &:focus{
+                border: 1px solid #FF5959;
+            }
+
 
     }
 
@@ -87,6 +92,10 @@ section{
             line-height: 19.2px;
             text-align: left;
             cursor: pointer;
+
+            &:focus{
+                border: 1px solid #FF5959;
+            }
 
             &:hover{
                 border: 2px solid #FF5959;
@@ -155,5 +164,14 @@ button{
             background-image: url(./../../../assets/img/goupbuttonhover.svg);
         }
     }
+}
+
+.error-message {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: #E61C40;
+    margin-top: -20px;
+    margin-left: 50px;
 }
 

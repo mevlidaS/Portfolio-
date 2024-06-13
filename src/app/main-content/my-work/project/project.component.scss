@@ -1,15 +1,31 @@
 .project_container {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  gap: 80px;
+  margin-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  top:300px;
+  z-index: 1;
+
+  .left_side {
     display: flex;
-    align-items: center;
-    padding-right: 100px;
-    padding-left: 100px;
-    gap: 80px;
-    .left_side {
-      width: 50%;
+    width: 50%;
+  }
       
       img {
-        width: 100%;
-        padding-top: 300px;
+        height: 393px;
+        box-shadow: 5px 5px 15px 0px #00000026;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-50px) scale(1.1);
+        }
       }
     }
     .right_side {
@@ -20,8 +36,7 @@
       margin-bottom: 48px;
       h2 {
         color:#FF5959;
-        ;
-        font-size: 3em;
+        font-size: 45px;
         margin-block-start: 0;
         margin-block-end: 0;
       }
@@ -29,40 +44,51 @@
         color:#FF5959;
         ;
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 23px;
         margin-block-start: 0;
         margin-block-end: 0;
       }
+
+      p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        
+      }
     }
-  }
+  
   
   .button_container {
     display: flex;
-    gap: 32px;
-    button {
-      transition: none;
-      &:hover {
-        transform: none;
-      }
-    }
-    button:first-child {
-      background-color:#FF5959;
-      ;
-      &:hover {
-        background-color:  #FF5959;
-        ;
-      }
-    }
-    button:nth-child(2) {
-      background-color: transparent;
-      border: 2px solid #FF5959;
+    align-items: center;
+    gap: 86px;
 
-      &:hover {
-        background-color:#FF5959;
-        ;
+    button {
+      width: 137px;
+      height: 65px;
+      background-color: white;
+      border: 2px solid #FF5959;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px 0px #00000026;
+      cursor: pointer;
+      font-size: 23px;
+      font-family: 'Poppins';
+      font-weight: 400;
+      color: #FF5959;
+
+        &:hover{
+               
+          animation: gradient-animation 0.05s ease-in-out forwards;
+          color: white;
+          transform: scale(1.1);
+          background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
       }
-    }
+
   }
+}
   
   .reversed {
     flex-direction: row-reverse;
