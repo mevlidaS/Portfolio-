@@ -11,59 +11,49 @@
 
         <div class="contact_form">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="Name" id="Name" placeholder="Your name" required="">
+                <input #name="ngModel" [(ngModel)]="inputData.name" type="text" name="Name" id="Name" placeholder="Your name" required="">
                 @if (!name.valid && name.touched && !name.disabled) {
                     <span class="error-message">Your name is required</span>
                 }
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="text" name="Email" id="Email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <input #email="ngModel" [(ngModel)]="inputData.email" type="text" name="Email" id="Email" placeholder="Your email" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$">
                 @if (!email.valid && email.touched && !email.disabled) {
                     <span class="error-message">Your email is required</span>
                 }
-                <textarea #message="ngModel"  [(ngModel)]="contactData.message" name="Message" minlength="10" id="Message" cols="30" rows="10" placeholder="Your message" required=""></textarea>
+                <textarea #message="ngModel"  [(ngModel)]="inputData.message" name="Message" minlength="10" id="Message" cols="30" rows="10" placeholder="Your message" required=""></textarea>
                     @if( !message.valid && message.touched) {
-                        <span class="error-message">Your email is required</span> 
+                        <span class="error-message">Your message is empty</span> 
                     }
-                <div class="privacy-policy">
-                    <div class="checkbox"><input type="checkbox" style="width: 24px; height: 24px;"></div>
-                    <div>
-                        <span >
-                            I've read the <a>privacy policy </a> and agree to the processing
-                            of my data as
-                            outlined.
-                        </span>
-                    </div>
-                </div>
 
-                <!-- <div class="privacy-policy">
-                    <div (click)="handleCheckbox()"
-                        [ngClass]="{'checkbox-checked': isChecked, 'checkbox-unchecked': !isChecked}"
-                        class="checkbox"></div>
-                    <div>
-                        <span >
-                            I've read the <a
-                                [ngStyle]="{ 'width': isPrivacyPolicy === 'privacy policy' ? '110px' : '180px' }"
-                                (click)="showPrivacyPolicy()">{{isPrivacyPolicy}} </a> and agree to the processing
-                            of my data as
-                            outlined.
-                        </span>
-                    </div>
-                </div> -->
-
-                @if (showErrorCheckbox) {
-                    <span  class="error-message">Please accept the privacy policy.</span>
-                    }
-                    <button class="disabled-button" [ngClass]="{
-                        'enabled-button':
-                        isChecked &&
-                        name.valid &&
-                        name.touched &&
-                        !name.disabled &&
-                        email.valid &&
-                        email.touched &&
-                        !email.disabled &&
-                        message.valid &&
-                        message.touched &&
-                        !message.disabled}" type="submit">Say hello :)</button>
+                        <div class="flex_column_container">
+                            <div>
+                              <div class="privacy-policy">
+                                <div (click)="togglePrivacyPolicy()">
+                                  @if (privacyPolicyChecked == false) {<img class="checkbox"
+                                    src="./assets/img/checkbox_empty.svg"
+                                    alt=""
+                                  />} @else {<img class="checkbox"
+                                    src="./assets/img/checkbox_filled.svg"
+                                    alt=""
+                                  />}
+                                </div>
+                                <span>
+                                    I've read the <a>privacy policy </a> and agree to the processing of my data as
+                                    outlined.
+                                </span>
+                              </div>
+                              @if (!privacyPolicyChecked && message.valid && email.valid &&
+                              name.valid) {
+                              <span class="error-message">Please accept the privacy policy</span>
+                              }
+                            </div>
+                            <div class="button_container">
+                              @if (contactForm.valid && privacyPolicyChecked) {
+                                <button class="button_enabled"
+                                type="submit">Say hello :)</button>
+                            } @else {<button class="button_disabled">Say hello : )</button
+                              >}
+                            </div>
+                          </div>
                 </form>
               
 
@@ -77,4 +67,15 @@
         <img style="width: 73px; height: 73px" src="./assets/img/o-mitte.svg" alt="">
     </div>
 </section>
+
+@if (sendWasTouched) {
+  <div class="popup_background">
+    <div
+      class="popup"
+    >
+      <span>Thank you for your message!</span>
+    </div>
+  </div>
+
+}
 

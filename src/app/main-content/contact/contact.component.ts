@@ -2,37 +2,28 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
   http = inject(HttpClient);
-  mailTest = true;
-  currentEndPoint: string = '';
-  isPrivacyPolicy: string = '';
+  sendWasTouched: boolean = false;
+  privacyPolicyChecked: boolean = false;
 
 
-  contactData = {
+  inputData = {
     name: '',
     email: '',
     message: '',
   };
 
-  // mailTest: boolean = true;
-  isChecked: boolean = false;
-  showErrorCheckbox: boolean = false;
-  isSubmitted: boolean = false;
-
-  constructor(private router: Router) {
-    this.currentUrl();
-  }
 
   post = {
     endPoint: 'https://mevlida-salendrkovic.de/sendMail.php',
@@ -45,44 +36,33 @@ export class ContactComponent {
     },
   };
 
-  private currentUrl(): void {
-    const url = window.location.href;
-    if (url.includes('en-US')) {
-      this.currentEndPoint = 'https://mevlida-salendrkovic.de/en-US/';
-    } else if (url.includes('de-DE')) {
-      this.currentEndPoint = 'https://mevlida-salendrkovic.de/de-DE/';
-    }
-  }
-
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+    if (ngForm.submitted && ngForm.form.valid) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.inputData))
         .subscribe({
           next: (response) => {
-
+            this.sendWasTouched = true;
+            setTimeout(() => {
+              this.sendWasTouched = false;
+            }, 2000);
             ngForm.resetForm();
+            this.privacyPolicyChecked = false;
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
     }
   }
 
-  public handleCheckbox(): void {
-    this.isChecked = !this.isChecked;
-    if (this.isChecked) {
-      this.showErrorCheckbox = false;
+  togglePrivacyPolicy() {
+    if (this.privacyPolicyChecked) {
+      this.privacyPolicyChecked = false;
+    } else {
+      this.privacyPolicyChecked = true;
     }
   }
-
-  public showPrivacyPolicy(): void {
-    this.router.navigate(['/privacy-policy']);
-  }
-
 }
 

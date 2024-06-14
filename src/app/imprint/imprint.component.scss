@@ -1,0 +1,52 @@
+.background-container {
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #FFEAEA 91.39%);
+   height: 100vh;
+   box-sizing: border-box;
+   width: 100%;
+}
+
+h1 {   
+    font-size: 56px;   
+    font-weight: 800;
+    font-family: 'Baloo 2';
+    color: #FF5959;
+}
+.imprint-container {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 32px;
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Montserrat';
+        color: black;
+}
+}
+
+.background-img {
+    position: absolute;
+    top: -50px;
+    left: -40px;
+    width: 300px;
+}
+
+@media(max-width: 850px) {
+    .imprint-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .background-img {
+        top: -100px;
+        left: -120px;
+    }
+}
