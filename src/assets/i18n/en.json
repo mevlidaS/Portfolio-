@@ -1,0 +1,59 @@
+{
+    "header": {
+      "about": "About me",
+      "skills": "Skill set",
+      "portfolio": "My projects"
+    },
+
+    "landingPage": {
+        "iam": "Hello!I am Mevlida",
+        "jobTitle": "FRONTEND DEVELOPER",
+        "scroll": "SCROLL"
+    },
+
+    "aboutMe": {
+        "title": "About me",
+        "description": " I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their ideas into real life.  I am looking forward to continuing my developer career with a job in a junior web developer position. If you think I'd be a good match for your projects, contact me!",
+        "button": "Send a message"
+    },
+
+    "skills": {
+        "title": "Skill set"
+    },
+
+    "meineProjekte": {
+        "title": "My work",
+        "text":"Feel free to try out my latest web development projects and look into their code."
+    },
+
+    "contact": {
+        "title": "Contact",
+        "headline": "Got a problem to solve?",
+        "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "contactMe": "Need a Frontend developer? Contact me!",
+        "name": "Your name",
+        "email": "Your email",
+        "message": "Your message",
+        "privacyPolicy": "I have read privacy policy and agree to the processing of my data as outlined.",
+        "button": "Say hello :)",
+        "error-name": "Your name is required",
+        "error-email": "Your email is required",
+        "error-message": "Your message is empty"
+
+    },
+
+    "footer": {
+        "imprint": "Imprint"
+    },
+
+    "imprint": {
+        "title": "Imprint",
+        "text": "Legal information according to § 5 TMG ",
+        "vetretenDurch": "Represented by",
+        "kontakt": "Contact",
+        "telefon": "Phone"
+    }
+
+
+}
+

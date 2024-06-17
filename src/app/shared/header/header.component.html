@@ -1,9 +1,17 @@
 <nav>
-    <img src="./assets/img/logo.svg" alt="">
+    <a href="#landingPage"><img src="./assets/img/logo.svg" alt=""></a>
     <div>
-        <a href="#">About me</a>
-        <a href="#">Skill set</a>
-        <a href="#">My work</a>
-        <a href="#">Contact</a>
+        <!-- <a href="#aboutMe">{{ "header.about" | translate }}</a>
+        <a href="#skillSet">{{ "header.skills" | translate }}</a>
+        <a href="#myWork">{{ "header.portfolio" | translate }}</a> -->
+        <a href="#aboutMe">About me</a>
+        <a href="#skillSet">Skill set</a>
+        <a href="#myWork">My work</a>
+        <a (click)="translate.switchLanguage('en')">EN</a> |
+        <a (click)="translate.switchLanguage('de')">DE</a>
+
+          
+       
     </div>
+
 </nav>

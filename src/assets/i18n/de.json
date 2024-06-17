@@ -1,0 +1,58 @@
+{
+    "header": {
+      "about": "Über mich",
+      "skills": "Fächigkeiten",
+      "portfolio": "Meine Projekte"
+    },
+
+    "landingPage": {
+        "iam": "Hallo!Ich bin Mevlida",
+        "jobTitle": "FRONTEND ENTWICKLERIN",
+        "scroll": "SCROLLEN"
+    }, 
+
+    "aboutMe": {
+        "title": "Lass uns zusammen arbeiten",
+        "description":"Ich bin Frontend Entwicklerin in München, Deutschland. Es macht mir Spaß, Designern und Unternehmen zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Frontend Entwicklerin fortzusetzen und eine Stelle als Junior Frontend Entwicklerin zu finden. Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+        "button": "Sende eine Nachricht"
+    },
+
+    "skills": {
+        "title": "Meine Fängigkeiten"
+    },
+
+    "meineProjekte": {
+        "title": "Meine Projekte",
+        "text":"Probieren Sie meine neuesten Webentwicklungsprojekte aus und schauen Sie sich deren Code an."
+    },
+
+    "contact": {
+        "title": "Kontakt",
+        "headline": "Haben Sie ein Problem zu lösen?",
+        "text": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "contactMe": "Brauchen Sie einen Software Entwickler?Kontaktieren Sie mich!",
+        "name": "Ihr Name",
+        "email": "Ihre E-Mail",
+        "message": "Ihre Nachricht",
+        "privacyPolicy": "Ich habe die Datenschutzbestimmungen gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "button": "Hallo sagen :)",
+        "error-name": "Ihr Name ist erforderlich",
+        "error-email": "Ihre E-Mail ist erforderlich",
+        "error-message": "Ihre Nachricht ist leer"
+
+    },
+
+    "footer": {
+        "imprint": "Impressum"
+    },
+
+    "imprint": {
+        "title": "Impressum",
+        "text": "Angaben gemäß § 5 TMG ",
+        "vetretenDurch": "Vertreten durch",
+        "kontakt": "Kontakt",
+        "telefon": "Telefon"
+    }
+
+
+}

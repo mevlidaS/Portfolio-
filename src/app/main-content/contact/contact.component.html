@@ -37,7 +37,7 @@
                                   />}
                                 </div>
                                 <span>
-                                    I've read the <a>privacy policy </a> and agree to the processing of my data as
+                                    I've read the <a [routerLink]="['/privacy-policy']">privacy policy </a> and agree to the processing of my data as
                                     outlined.
                                 </span>
                               </div>
@@ -50,7 +50,7 @@
                               @if (contactForm.valid && privacyPolicyChecked) {
                                 <button class="button_enabled"
                                 type="submit">Say hello :)</button>
-                            } @else {<button class="button_disabled">Say hello : )</button
+                            } @else {<button class="button_disabled" style="cursor: not-allowed;">Say hello : )</button
                               >}
                             </div>
                           </div>
