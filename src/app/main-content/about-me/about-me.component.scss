@@ -1,119 +1,67 @@
-div{
-    background-color:white;
-    height:632px;
-    width: 1440px;
+
+.aboute-me-container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 200px 100px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    div{
+    justify-content: space-between;
+    gap: 50px;
+   position: relative;
+    animation: opacityAnimation linear forwards;
+    animation-timeline: scroll();
+    animation-range: contain;
+
+    >img {
+        width: 82px;
+        height: 82px;
+        position: absolute;
+        right: 20%;
+        top: 80px;
+    }
+
+    >span {
+        font-size: 121px;
+        font-weight: 900;
+        line-height: 121px;
+        color:#FF5959;
+        font-family: 'Baloo 2';
+        width: 50%;
+        word-wrap: break-word;
+    }
+
+    >div {
+        flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 571px;
-        height: 252px;
-        position: absolute;
-        top: 1307px;
-        right: 150px;
-        gap: 0px;
-        opacity: 0px;
+        gap: 20px;
 
-        p{
+        >p {
             font-size: 23px;
-            font-weight: 400;
-            line-height: 27.6px;
-            text-align: left;
-
-
+            line-height: 27px;
         }
 
-        a{
-            width: auto;
-            height: 58px;
-            top: 1472px;
-            left: 932px;
-            padding: 15px 30px 15px 30px;
-            gap: 10px;
-            border-radius: 10px;
-            border: 2px 0px 0px 0px;
-            opacity: 0px;
+        >a {
+            text-decoration: none;
             border: 2px solid #FF5959;
-            box-shadow: 5px 5px 15px 0px #00000026;
-            font-size: 23px;
-            font-weight: 400;
-            line-height: 27.6px;
-            text-align: left;
+            border-radius: 10px;
+            background-color: white;
             color: #FF5959;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 15px 30px;
+            font-size: 23px;
+            box-shadow: 5px 5px 15px 0px #00000026;
             cursor: pointer;
 
-            &:hover{
-               
-                animation: gradient-animation 0.05s ease-in-out forwards;
-                color: white;
-                transform: scale(1.1);
-                background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-
-
+            &:hover {
+                &:hover{
+                    animation: gradient-animation 0.05s ease-in-out forwards;
+                    color: white;
+                    transform: scale(1.1);
+                    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%)
             }
-
         }
+    }
 
 }
-
-// >a {
-//     text-decoration: none;
-//     border: 2px solid #5988FF;
-//     border-radius: 10px;
-//     background-color: white;
-//     color: #5988FF;
-//     padding: 15px 30px;
-//     font-size: 23px;
-//     box-shadow: 5px 5px 15px 0px #00000026;
-//     cursor: pointer;
-
-//     &:hover {
-//         color: #FFFFFF;
-//         transform: scale(1.1);
-//         animation: gradient-animation 0.05s ease-in-out forwards;
-//     }
-
-span{
-    width: 606px;
-    height: 242px;
-    position: absolute;
-    top: 1307px;
-    left: 100px;
-    gap: 0px;
-    opacity: 0px;
-    font-size: 121px;
-    font-weight: 800;
-    line-height: 121px;
-    letter-spacing: 0.01em;
-    text-align: left; 
-    color: #FF5959;
-     
-}
-
-}
-
-.circle{
-    width: 106px;
-    height: 106px;
-    position: absolute;
-    top: 1160px;
-    left: 800px;
-    gap: 0px;
-    opacity: 0px;
-}
-
-.circle_small{
-    width: 82px;
-    height: 82px;
-    position: absolute;
-    top: -150px;
-    right:250px;
-    gap: 0px;
-    opacity: 0px;
 }

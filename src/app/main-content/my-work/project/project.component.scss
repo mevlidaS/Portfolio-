@@ -1,5 +1,4 @@
 .project_container {
-  width: 80%;
   height: 500px;
   display: flex;
   justify-content: space-evenly;
@@ -9,8 +8,9 @@
   padding-left: 100px;
   padding-right: 100px;
   position: relative;
-  top:300px;
+  top:220px;
   z-index: 1;
+
 
   .left_side {
     display: flex;

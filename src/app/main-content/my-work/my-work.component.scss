@@ -1,6 +1,16 @@
 section{
-    width: 100%;
-    background-color: white;
+    // width: 100%;
+    // background-color: white;
+    max-width: 1440px;
+    padding:100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    // position: relative;
+    // overflow-x: hidden;
+
+  
 
     h1{
         color: #FF5959;
@@ -10,8 +20,8 @@ section{
         letter-spacing: 0.01em;
         text-align: left;
         position: absolute;
-        left:92px;
-        top:2396px;
+        left:300px;
+        top:2500px;
 
     }
 
@@ -19,8 +29,8 @@ section{
         width: 680px;
         height: 56px;
         position: absolute;
-        top: 2580px;
-        left: 100px;
+        top: 2680px;
+        left: 300px;
         color: black;
         font-size: 23px;
         line-height: 27.6px;
@@ -32,8 +42,8 @@ section{
 
 .circle_1{
     position: absolute;
-    left: 563px;
-    top: 2350px;
+    left: 763px;
+    top: 2480px;
     width: 110px;
     height: 110px;
 }
@@ -42,8 +52,8 @@ section{
     width: 183px;
     height: 183px;
     position: absolute;
-    right: 500px;
-    top: 2485px;
+    right: 400px;
+    top: 2585px;
 }
 
 .circle_3 {
@@ -74,7 +84,7 @@ section{
     width: 180px;
     height: 180px;
     position: absolute;
-    top:4135px;
+    top:4200px;
     left: 620px;
 }
 

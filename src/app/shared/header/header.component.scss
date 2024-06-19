@@ -1,15 +1,29 @@
 nav{
     padding: 10px;
     display: flex;
+    max-width: 1440px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
     height: 117px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    z-index: 8;
+   
     
 
     img{
         width: 64px;
-        height: 69px;
+        height: 64px;
+        border:1px solid #FF5959;
+        border-radius: 50px;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 
 }
@@ -22,7 +36,6 @@ a{
     margin: 0 16px;
     font-family: 'Montserrat', sans-serif;
     width: 120px;
-    height: 32px;
 
     &:hover{
        font-weight: 700;

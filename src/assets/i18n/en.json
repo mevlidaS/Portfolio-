@@ -12,7 +12,7 @@
     },
 
     "aboutMe": {
-        "title": "About me",
+        "title": "Let's work together",
         "description": " I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their ideas into real life.  I am looking forward to continuing my developer career with a job in a junior web developer position. If you think I'd be a good match for your projects, contact me!",
         "button": "Send a message"
     },
@@ -30,15 +30,21 @@
         "title": "Contact",
         "headline": "Got a problem to solve?",
         "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-        "contactMe": "Need a Frontend developer? Contact me!",
+        "contactMe1": "Need a Frontend developer?",
+        "contactMe2": "Contact me!",
         "name": "Your name",
         "email": "Your email",
         "message": "Your message",
-        "privacyPolicy": "I have read privacy policy and agree to the processing of my data as outlined.",
+        "privacyPolicy1": "I have read",
+        "privacyPolicy2": " and agree to the processing of my data as outlined.",
+        "privacyPolicy3": "privacy policy",
         "button": "Say hello :)",
         "error-name": "Your name is required",
         "error-email": "Your email is required",
-        "error-message": "Your message is empty"
+        "error-message": "Your message is empty",
+        "error-privacy-policy": "Please accept the privacy policy",
+
+        "success": "Thank you for your message!"
 
     },
 

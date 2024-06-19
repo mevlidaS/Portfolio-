@@ -3,8 +3,8 @@
 section{
     height: 100vh;
     width: 100%;
-    // background: linear-gradient(179.99deg, #FFFFFF 12.89%, #FFEAEA 91.39%);
-    background-image: url(./../../../assets/img/hero-background.svg);
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #FFEAEA 91.39%);
+    // background-image: url(./../../../assets/img/hero-background.svg);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -12,22 +12,28 @@ section{
     flex-direction: column;
     align-items: center;
 
-    //     .background-img {
+        .background-img {
     //         position: absolute;
     // height: 892px;
     // width: 80%;
     // z-index: 0;
     // right: 0px;
-    // top: 200px;
+    // top: 150px;
 
-    //     }
+    position: absolute;
+    top: -240px;
+    left: -200px;
+    width: 1200px;
+    z-index: 0;
+
+        }
 
     .mevlida-img{
         width: auto;
         height: 917px;
         position: absolute;
       bottom:0;
-        right: 32px;
+        left:0;
     }
 
     h1{
@@ -35,14 +41,14 @@ section{
         height: 221px;
         position: absolute;
         top: 405px;
-        left: 100px;
-        // right:100px;
+        // left: 100px;
+        right:200px;
         font-size: 128px;
         font-weight: 800;
         line-height: 110px;
         letter-spacing: -0.025em;
         text-align: left;
-        color:white;
+        color:#FF5959;
         margin-block-start: 0;
         margin-block-end: 0;
         
@@ -53,12 +59,12 @@ section{
         height: 61px;
         position: absolute;
         top: 327px;
-        left: 100px;
-        // right: 50px;
+        // left: 100px;
+        right: 150px;
         font-size: 64px;
         font-weight: 400;
         text-align: left;
-        color: white;
+        color: #FF5959;
         margin-block-start: 0;
         margin-block-end: 0;
     }
@@ -72,8 +78,8 @@ section{
         width: 95px;
         height: 28px;
         position: absolute;
-        top: 680px;
-        right: 60px;
+        top: 780px;
+        right: 450px;
         gap: 0px;
         opacity: 0px;
         margin-block-start: 0;
@@ -128,10 +134,10 @@ section{
 
 .line{
     width: 0px;
-    height: 330px;
+    height: 230px;
     position: absolute;
     bottom: 0;
-    right: 100px;
+    right: 500px;
     gap: 0px;
     border: 2px 0px 0px 0px;
     opacity: 0px;

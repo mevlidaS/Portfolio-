@@ -1,32 +1,33 @@
 <section>
-    <h1 class="baloo">Contact</h1>
+  <div class="main_content_container">
+    <h1 class="baloo">{{ "contact.title" | translate}}</h1>
 
     <div class="contact_container">
-        <div style="width:773px;">
-            <h2 class="montserrat">Got a problem to solve?</h2>
-            <span class="montserrat">Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</span><br>
-            <p class="montserrat">Need a Frontend developer? <b>Contact me!</b> </p>
+        <div style="width:50%;">
+            <h2 class="montserrat">{{ "contact.headline" | translate}}</h2>
+            <span class="montserrat span" >{{ "contact.text" | translate}}</span><br><br><br>
+            <span  class="montserrat p">{{ "contact.contactMe1" | translate}} <span class="p"><b>{{ "contact.contactMe2" | translate}}</b></span></span>
             <div><img style="width: 204px; height: 204px; padding-left: 150px; margin-top: 20px;" src="./assets/img/o-mitte.svg" alt=""></div>
         </div>
 
-        <div class="contact_form">
+        <div class="contact_form" style="width: 50%;">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <input #name="ngModel" [(ngModel)]="inputData.name" type="text" name="Name" id="Name" placeholder="Your name" required="">
+                <input #name="ngModel" [(ngModel)]="inputData.name" type="text" name="Name" id="Name" [placeholder]="'contact.name' | translate" required="">
                 @if (!name.valid && name.touched && !name.disabled) {
-                    <span class="error-message">Your name is required</span>
+                    <span class="error-message">{{ "contact.error-name" | translate}}</span>
                 }
-                <input #email="ngModel" [(ngModel)]="inputData.email" type="text" name="Email" id="Email" placeholder="Your email" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$">
+                <input #email="ngModel" [(ngModel)]="inputData.email" type="text" name="Email" id="Email" [placeholder]="'contact.email' | translate" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$">
                 @if (!email.valid && email.touched && !email.disabled) {
-                    <span class="error-message">Your email is required</span>
+                    <span class="error-message">{{ "contact.error-email" | translate}}</span>
                 }
-                <textarea #message="ngModel"  [(ngModel)]="inputData.message" name="Message" minlength="10" id="Message" cols="30" rows="10" placeholder="Your message" required=""></textarea>
+                <textarea #message="ngModel"  [(ngModel)]="inputData.message" name="Message" minlength="10" id="Message" cols="30" rows="10" [placeholder]="'contact.message' | translate" required=""></textarea>
                     @if( !message.valid && message.touched) {
-                        <span class="error-message">Your message is empty</span> 
+                        <span class="error-message">{{ "contact.error-message" | translate}}</span> 
                     }
 
                         <div class="flex_column_container">
-                            <div>
-                              <div class="privacy-policy">
+                          <div>
+                              <div class="privacy-policy" >
                                 <div (click)="togglePrivacyPolicy()">
                                   @if (privacyPolicyChecked == false) {<img class="checkbox"
                                     src="./assets/img/checkbox_empty.svg"
@@ -37,23 +38,22 @@
                                   />}
                                 </div>
                                 <span>
-                                    I've read the <a [routerLink]="['/privacy-policy']">privacy policy </a> and agree to the processing of my data as
-                                    outlined.
+                                  <span class="montserrat span">{{ "contact.privacyPolicy1" | translate}}</span> &nbsp; <a class="montserrat" [routerLink]="['/privacy-policy']">{{ "contact.privacyPolicy3" | translate}} </a> &nbsp;<span class="montserrat span"> {{ "contact.privacyPolicy2" | translate}}</span>
                                 </span>
                               </div>
                               @if (!privacyPolicyChecked && message.valid && email.valid &&
                               name.valid) {
-                              <span class="error-message">Please accept the privacy policy</span>
+                              <span class="error-message">{{ "contact.error-privacy-policy" | translate}}</span>
                               }
                             </div>
                             <div class="button_container">
                               @if (contactForm.valid && privacyPolicyChecked) {
                                 <button class="button_enabled"
-                                type="submit">Say hello :)</button>
-                            } @else {<button class="button_disabled" style="cursor: not-allowed;">Say hello : )</button
+                                type="submit">{{ "contact.button" | translate}}</button>
+                            } @else {<button class="button_disabled" style="cursor: not-allowed;">{{ "contact.button" | translate}}</button
                               >}
                             </div>
-                          </div>
+                      </div>
                 </form>
               
 
@@ -66,6 +66,7 @@
         <a href="#" class="go_up"></a>
         <img style="width: 73px; height: 73px" src="./assets/img/o-mitte.svg" alt="">
     </div>
+  </div>
 </section>
 
 @if (sendWasTouched) {
@@ -73,7 +74,7 @@
     <div
       class="popup"
     >
-      <span>Thank you for your message!</span>
+      <span>{{ "contact.success" | translate}}</span>
     </div>
   </div>
 
