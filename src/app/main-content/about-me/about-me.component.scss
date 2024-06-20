@@ -6,6 +6,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 50px;
    position: relative;
     animation: opacityAnimation linear forwards;
@@ -40,6 +41,7 @@
         >p {
             font-size: 23px;
             line-height: 27px;
+            width: 500px;
         }
 
         >a {
@@ -48,7 +50,7 @@
             border-radius: 10px;
             background-color: white;
             color: #FF5959;
-            padding: 15px 30px;
+            padding: 15px 15px;
             font-size: 23px;
             box-shadow: 5px 5px 15px 0px #00000026;
             cursor: pointer;
@@ -64,4 +66,77 @@
     }
 
 }
+}
+
+@media(max-width:1670px){
+
+    .aboute-me-container {
+        padding: 100px 50px;
+
+        >img {
+            top:30px;
+        }
+    }
+
+}
+
+@media(max-width:1560px){
+    .aboute-me-container {
+        padding: 100px 0;
+    }
+}
+
+@media(max-width: 1360px){
+
+    .aboute-me-container {
+        span{
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        }
+
+}
+
+@media(max-width: 1000px){
+    .aboute-me-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media(max-width: 850px){
+
+    .aboute-me-container {
+        span{
+            font-size: 56px;
+            line-height: 50px;
+        }
+        div{
+            p{
+                font-size: 18px;
+            }
+        }
+      
+}
+}
+
+@media(max-width: 550px){
+
+    .aboute-me-container {
+        span{
+            width:100%;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        div{
+            p{
+                width: 100%;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
 }

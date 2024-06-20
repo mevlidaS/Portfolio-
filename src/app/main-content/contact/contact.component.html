@@ -3,14 +3,14 @@
     <h1 class="baloo">{{ "contact.title" | translate}}</h1>
 
     <div class="contact_container">
-        <div style="width:50%;">
+        <div class="contact_text">
             <h2 class="montserrat">{{ "contact.headline" | translate}}</h2>
             <span class="montserrat span" >{{ "contact.text" | translate}}</span><br><br><br>
             <span  class="montserrat p">{{ "contact.contactMe1" | translate}} <span class="p"><b>{{ "contact.contactMe2" | translate}}</b></span></span>
             <div><img style="width: 204px; height: 204px; padding-left: 150px; margin-top: 20px;" src="./assets/img/o-mitte.svg" alt=""></div>
         </div>
 
-        <div class="contact_form" style="width: 50%;">
+        <div class="contact_form" >
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <input #name="ngModel" [(ngModel)]="inputData.name" type="text" name="Name" id="Name" [placeholder]="'contact.name' | translate" required="">
                 @if (!name.valid && name.touched && !name.disabled) {

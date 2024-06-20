@@ -16,7 +16,7 @@ h1 {
     overflow: hidden;
     margin: 0 auto;
     max-height: 100vh;
-    padding: 120px 100px;
+    padding: 140px 100px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -50,14 +50,21 @@ h1 {
     width: 200px;
 }
 
+@media(max-width:1150px){
+    .background-img1{
+        display: none;
+    }
+
+    .background-img{
+        left: -230px;
+        top: -300px;
+    }
+}
+
 @media(max-width: 850px) {
     .imprint-container {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .background-img {
-        top: -100px;
-        left: -120px;
-    }
 }

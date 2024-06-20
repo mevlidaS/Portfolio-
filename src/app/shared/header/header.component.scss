@@ -1,5 +1,5 @@
 nav{
-    padding: 10px;
+    // padding: 10px;
     display: flex;
     max-width: 1440px;
     width: 100%;
@@ -15,7 +15,7 @@ nav{
    
     
 
-    img{
+    .logo_img{
         width: 64px;
         height: 64px;
         border:1px solid #FF5959;
@@ -26,6 +26,29 @@ nav{
         }
     }
 
+    .burger_menu{
+       display: none;
+    }
+    .languages{
+        display: flex;
+        justify-content: end;
+        text-decoration: none;
+    color:#FF5959;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 16px;
+    font-family: 'Montserrat', sans-serif;
+
+
+    }
+
+}
+
+div{
+    div{
+        display: flex;
+        justify-content: end;
+    }
 }
 
 a{
@@ -39,6 +62,25 @@ a{
 
     &:hover{
        font-weight: 700;
+
+    }
+}
+
+// @media(max-width:1460px){
+//     nav{
+//         padding: 0;
+//     }
+// }
+
+@media(max-width:1180px){
+    nav{
+        .burger_menu{
+            display: block;
+        }
+
+        div{
+            display: none;
+        }
 
     }
 }

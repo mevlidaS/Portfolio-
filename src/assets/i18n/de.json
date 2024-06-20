@@ -1,7 +1,7 @@
 {
     "header": {
       "about": "Über mich",
-      "skills": "Fächigkeiten",
+      "skills": "Skills",
       "portfolio": "Meine Projekte"
     },
 
@@ -18,7 +18,7 @@
     },
 
     "skills": {
-        "title": "Meine Fängigkeiten"
+        "title": "Skills"
     },
 
     "meineProjekte": {
@@ -35,13 +35,16 @@
         "name": "Ihr Name",
         "email": "Ihre E-Mail",
         "message": "Ihre Nachricht",
-        "privacyPolicy": "Ich habe die",
+        "privacyPolicy1": "Ich habe die",
         "privacyPolicy2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "privacyPolicy3": "Datenschutzbestimmungen",
         "button": "Hallo sagen :)",
         "error-name": "Ihr Name ist erforderlich",
         "error-email": "Ihre E-Mail ist erforderlich",
-        "error-message": "Ihre Nachricht ist leer"
+        "error-message": "Ihre Nachricht ist leer",
+        "error-privacy-policy": "Bitte akzeptieren Sie die Datenschutzbestimmungen",
+
+        "success": "Danke für Ihre Nachricht!"
 
     },
 

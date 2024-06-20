@@ -1,13 +1,17 @@
 <nav>
-    <a href="#landingPage"><img src="./assets/img/S.svg" alt=""></a>
+    <a href="#landingPage"><img class="logo_img"  src="./assets/img/S.svg" alt=""></a>
     <div>
-        <a href="#aboutMe">{{ "header.about" | translate }}</a>
+        <a  href="#aboutMe">{{ "header.about" | translate }}</a>
         <a href="#skillSet">{{ "header.skills" | translate }}</a>
         <a href="#myWork">{{ "header.portfolio" | translate }}</a>
-        <a (click)="translate.switchLanguage('en')">EN</a>|<a (click)="translate.switchLanguage('de')">DE</a>
-       
+        <div>
+            <a style="width: auto;" (click)="translate.switchLanguage('en')">EN</a>|
+            <a style="width: auto;" (click)="translate.switchLanguage('de')">DE</a>   
+        </div>
           
-       
+        
+   
     </div>
+    <img class="burger_menu" src="./assets/img/burger_menu.svg" alt="">
 
 </nav>
