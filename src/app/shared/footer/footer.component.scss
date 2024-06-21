@@ -1,15 +1,15 @@
-footer {
+.footer_container {
   height: 291px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(
+  background: radial-gradient(
       71.18% 335.57% at 28.82% -124.4%,
       #ff5959 6.25%,
       #ff5959 51.56%,
       #de0000 100%
-    )
+    );
   
   span {
     display: flex;
