@@ -1,70 +1,68 @@
 .background-container {
-    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #FFEAEA 91.39%);
-   height: 100vh;
-   box-sizing: border-box;
-   width: 100%;
+  background: linear-gradient(179.99deg, #ffffff 12.89%, #ffeaea 91.39%);
+  height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-
-h1 {   
-    font-size: 56px;   
-    font-weight: 800;
-    font-family: 'Baloo 2';
-    color: #FF5959;
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  font-family: "Baloo 2";
+  color: #ff5959;
 }
 .imprint-container {
-    overflow: hidden;
-    margin: 0 auto;
-    max-height: 100vh;
-    padding: 140px 100px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    margin-bottom: 32px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-height: 100vh;
+  padding: 140px 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 32px;
 
-    p {
-        font-size: 18px;
-        font-weight: 400;
-        font-family: 'Montserrat';
-        color: black;
-        margin-block-start: 0;
-        margin-block-end: 0;
-}
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: black;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 }
 
 .background-img {
-    position: absolute;
-    top: -200px;
-    left: -40px;
-    width: 500px;
+  position: absolute;
+  top: -200px;
+  left: -40px;
+  width: 500px;
 }
 
-.background-img1{
-    position: absolute;
-    top: 500px;
-    right: 50px;
-    width: 200px;
+.background-img1 {
+  position: absolute;
+  top: 500px;
+  right: 50px;
+  width: 200px;
 }
 
-@media(max-width:1150px){
-    .background-img1{
-        display: none;
-    }
+@media (max-width: 1150px) {
+  .background-img1 {
+    display: none;
+  }
 
-    .background-img{
-        left: -230px;
-        top: -300px;
-    }
+  .background-img {
+    left: -230px;
+    top: -300px;
+  }
 }
 
-@media(max-width: 850px) {
-    .imprint-container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
+@media (max-width: 850px) {
+  .imprint-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

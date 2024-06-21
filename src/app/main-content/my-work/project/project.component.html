@@ -1,18 +1,21 @@
 @for (project of projects; track $index) {
-    <div
-      [ngClass]="{ project_container: true, reversed: project.isReversed }">
-      <div class="left_side">
-        <a href="{{ project.linkLiveTest }}" target="_blank"><img src="{{ project.src }}" alt="" /></a>
-      </div>
-      <div class="right_side">
-        <h2 class="baloo">{{ project.title }}</h2>
-        <h3 class="montserrat">{{ project.technologies }}</h3>
-        <p class="montserrat">
-          {{ project.description }}
-        </p>
-        <div class="button_container">
-          <a href="{{ project.linkGithub}}" target="_blank"><button>GitHub</button></a>
-        </div>
-      </div>
+<div [ngClass]="{ project_container: true, reversed: project.isReversed }">
+  <div class="left_side">
+    <a href="{{ project.linkLiveTest }}" target="_blank"
+      ><img src="{{ project.src }}" alt=""
+    /></a>
+  </div>
+  <div class="right_side">
+    <h2 class="baloo">{{ project.title }}</h2>
+    <h3 class="montserrat">{{ project.technologies }}</h3>
+    <p class="montserrat">
+      {{ project.description }}
+    </p>
+    <div class="button_container">
+      <a href="{{ project.linkGithub }}" target="_blank"
+        ><button>GitHub</button></a
+      >
     </div>
-    }
+  </div>
+</div>
+}

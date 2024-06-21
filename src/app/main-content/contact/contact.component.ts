@@ -5,26 +5,23 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [FormsModule, CommonModule, RouterModule, TranslateModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
   http = inject(HttpClient);
   sendWasTouched: boolean = false;
   privacyPolicyChecked: boolean = false;
 
-
   inputData = {
     name: '',
     email: '',
     message: '',
   };
-
 
   post = {
     endPoint: 'https://mevlida-salendrkovic.de/sendMail.php',
@@ -66,4 +63,3 @@ export class ContactComponent {
     }
   }
 }
-

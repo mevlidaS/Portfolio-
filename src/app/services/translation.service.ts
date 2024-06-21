@@ -14,6 +14,6 @@ export class TranslationService {
     this.translate.use(language);
   }
    
-  }
+}
 
   
