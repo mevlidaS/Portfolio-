@@ -1,10 +1,14 @@
 <nav>
     <a href="#landingPage"><img class="logo_img"  src="./assets/img/S.svg" alt=""></a>
+
+    @if (isScreenSmall) {
+       <img  (click)="toggleMenu()" src="./assets/img/burger_menu.svg" class="burger_menu" alt="">
+    } @else{
     <div>
         <a  href="#aboutMe">{{ "header.about" | translate }}</a>
         <a href="#skillSet">{{ "header.skills" | translate }}</a>
         <a href="#myWork">{{ "header.portfolio" | translate }}</a>
-        <div>
+        <div class="language_container">
             <a style="width: auto;" (click)="translate.switchLanguage('en')">EN</a>|
             <a style="width: auto;" (click)="translate.switchLanguage('de')">DE</a>   
         </div>
@@ -12,6 +16,21 @@
         
    
     </div>
-    <img class="burger_menu" src="./assets/img/burger_menu.svg" alt="">
+}
 
 </nav>
+
+@if (open) {
+    <div class="popup_background">
+      <div class="popup">
+        <div class="link_container link_container_mobile">
+            <a  class=".a" href="#aboutMe" (click)="closeMenu()">{{ "header.about" | translate }} </a>
+            <a  class=".a" href="#skillSet" (click)="closeMenu()">{{ "header.skills" | translate }}</a>
+            <a  class=".a" href="#myWork" (click)="closeMenu()">{{ "header.portfolio" | translate }}</a>
+            <a  class=".a"  (click)="translate.switchLanguage('en')" (click)="closeMenu()">EN</a>
+            <a  class=".a" (click)="translate.switchLanguage('de')" (click)="closeMenu()">DE</a>  
+        </div>
+      </div>
+    </div>
+}
+
