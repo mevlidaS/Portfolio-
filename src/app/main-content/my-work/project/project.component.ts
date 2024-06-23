@@ -45,7 +45,7 @@ export class ProjectComponent {
       description:
         'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       linkLiveTest: 'https://pokedex.mevlida-salendrkovic.de/index.html',
-      linkGithub: '',
+      linkGithub: 'https://github.com/mevlidaS/pokedex',
       isReversed: false,
     },
   ];

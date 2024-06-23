@@ -1,6 +1,6 @@
 .aboute-me-container {
   max-width: 1440px;
-  width: 100%;
+  width: 90%;
   padding: 200px 100px;
   margin: 0 auto;
   display: flex;
@@ -36,6 +36,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    text-align: justify;
 
     > p {
       font-size: 23px;
@@ -53,23 +54,20 @@
       font-size: 23px;
       box-shadow: 5px 5px 15px 0px #00000026;
       cursor: pointer;
-
+      background: {
+        image: linear-gradient(45deg,#DE0000 50%, transparent 50%);
+        position: 100%;
+        size: 400%;
+      }
+      transition: background 300ms ease-in-out;
+      
       &:hover {
-        &:hover {
-          animation: gradient-animation 0.05s ease-in-out forwards;
-          color: white;
-          transform: scale(1.1);
-          background: radial-gradient(
-            74.22% 74.22% at 19.79% 22.42%,
-            #ff5959 6.25%,
-            #ff5959 51.56%,
-            #de0000 100%
-          );
-        }
+        background-position: 0;
+        color: white;
       }
     }
+    }
   }
-}
 
 @media (max-width: 1670px) {
   .aboute-me-container {
@@ -109,6 +107,9 @@
     span {
       font-size: 56px;
       line-height: 50px;
+      width: 100%;
+      margin-top: 16px;
+      text-align: center;
     }
     div {
       p {
@@ -121,7 +122,7 @@
 @media (max-width: 550px) {
   .aboute-me-container {
     span {
-      width: 100%;
+     
       font-size: 40px;
       text-align: center;
     }

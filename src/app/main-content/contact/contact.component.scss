@@ -177,19 +177,19 @@ section {
   font-family: "Montserrat";
   font-size: 23px;
   color: #ff5959;
-
+  background: {
+    image: linear-gradient(45deg,#DE0000 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 300ms ease-in-out;
+  
   &:hover {
-    animation: gradient-animation 0.05s ease-in-out forwards;
+    background-position: 0;
     color: white;
-    transform: scale(1.1);
-    background: radial-gradient(
-        74.22% 74.22% at 19.79% 22.42%,
-        #ff5959 6.25%,
-        #ff5959 51.56%,
-        #de0000 100%
-      )
   }
 }
+
 
 .go_up_container {
   display: flex;

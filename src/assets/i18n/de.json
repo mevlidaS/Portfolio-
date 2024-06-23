@@ -7,13 +7,14 @@
 
     "landingPage": {
         "iam": "Hallo!Ich bin Mevlida",
-        "jobTitle": "FRONTEND ENTWICKLERIN",
+        "jobTitle": "FRONTEND ENTWICKLER",
         "scroll": "SCROLLEN"
     }, 
 
     "aboutMe": {
         "title": "Lass uns zusammen arbeiten",
-        "description":"Ich bin Frontend Entwicklerin in München, Deutschland. Es macht mir Spaß, Designern und Unternehmen zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Frontend Entwicklerin fortzusetzen und eine Stelle als Junior Frontend Entwicklerin zu finden. Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+        "description1":"Ich bin Frontend Entwicklerin in München, Deutschland. Es macht mir Spaß, Designern und Unternehmen zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Frontend Entwicklerin fortzusetzen und eine Stelle als Junior Frontend Entwicklerin zu finden.",
+        "description2":" Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
         "button": "Sende eine Nachricht"
     },
 

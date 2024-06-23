@@ -74,8 +74,10 @@
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 590px) {
   .skill_set_container {
+    padding-left: 0;
+    padding-right: 0;
     div {
       column-gap: 50px;
     }
@@ -85,9 +87,3 @@
   }
 }
 
-@media (max-width: 415px) {
-  .skill_set_container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}

@@ -1,7 +1,7 @@
 nav {
   display: flex;
   max-width: 1440px;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
   height: 117px;
@@ -66,8 +66,7 @@ a {
   z-index: 3;
   left: 0;
   top: 0;
-  background-color: #fffc;
-  background-color: linear-gradient(179.99deg, #ffffff 12.89%, #ffeaea 91.39%);
+  background: linear-gradient(179.99deg, #ffffff 12.89%, #ffeaea 91.39%);
   font-size: 24px;
   .popup {
     position: relative;
