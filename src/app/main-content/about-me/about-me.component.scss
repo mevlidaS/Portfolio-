@@ -17,7 +17,8 @@
     height: 82px;
     position: absolute;
     right: 20%;
-    top: 80px;
+    top: 10px;
+    z-index: -1;
   }
 
   > span {
@@ -72,16 +73,12 @@
 @media (max-width: 1670px) {
   .aboute-me-container {
     padding: 100px 50px;
-
-    > img {
-      top: 30px;
-    }
   }
 }
 
 @media (max-width: 1560px) {
   .aboute-me-container {
-    padding: 100px 0;
+    padding: 100px 30px;
   }
 }
 
@@ -94,11 +91,12 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1015px) {
   .aboute-me-container {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 100px 0;
   }
 }
 

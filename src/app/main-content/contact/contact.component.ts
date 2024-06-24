@@ -34,8 +34,13 @@ export class ContactComponent {
     },
   };
 
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
+      if(this.privacyPolicyChecked) {
       this.http
         .post(this.post.endPoint, this.post.body(this.inputData))
         .subscribe({
@@ -54,6 +59,7 @@ export class ContactComponent {
         });
     }
   }
+}
 
   togglePrivacyPolicy() {
     if (this.privacyPolicyChecked) {

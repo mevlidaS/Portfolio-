@@ -53,9 +53,12 @@ a {
   font-weight: 400;
   margin: 0 16px;
   font-family: "Montserrat", sans-serif;
-  
+  display: inline-block;
+  transition: transform 0.2s ease;
+ 
   &:hover {
-    color: #de0000;
+    transform: scale(1.1);
+    color: #DE0000;
   }
 }
 

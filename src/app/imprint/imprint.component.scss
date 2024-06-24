@@ -1,6 +1,6 @@
 .background-container {
   background: linear-gradient(179.99deg, #ffffff 12.89%, #ffeaea 91.39%);
-  height: 100vh;
+  max-height: 100vh;
   box-sizing: border-box;
   width: 100%;
 }
@@ -14,8 +14,7 @@ h1 {
 .imprint-container {
   overflow: hidden;
   margin: 0 auto;
-  max-height: 100vh;
-  padding: 140px 100px;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -23,7 +22,7 @@ h1 {
   align-items: center;
   gap: 10px;
   text-align: center;
-  margin-bottom: 32px;
+  background: linear-gradient(179.99deg, #ffffff 12.89%, #ffeaea 91.39%);
 
   p {
     font-size: 18px;
@@ -64,5 +63,6 @@ h1 {
   .imprint-container {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 160px;
   }
 }
