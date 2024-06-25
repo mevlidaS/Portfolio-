@@ -16,8 +16,8 @@
     <a href="#skillSet">{{ "header.skills" | translate }}</a>
     <a href="#myWork">{{ "header.portfolio" | translate }}</a>
     <div class="language_container">
-      <a style="width: auto; cursor: pointer;" (click)="translate.switchLanguage('en')">EN</a>|
-      <a style="width: auto; cursor: pointer;" (click)="translate.switchLanguage('de')">DE</a>
+      <a style="width: auto; cursor: pointer;" (click)="checkEnglish()">EN</a>|
+      <a style="width: auto; cursor: pointer;" (click)="checkGerman()">DE</a>
     </div>
   </div>
   }
@@ -38,13 +38,13 @@
       }}</a>
       <a
         class=".a" style="cursor: pointer;"
-        (click)="translate.switchLanguage('en')"
+        (click)="checkEnglish()"
         (click)="closeMenu()"
         >EN</a
       >
       <a
         class=".a" style="cursor: pointer;"
-        (click)="translate.switchLanguage('de')"
+        (click)="checkGerman()"
         (click)="closeMenu()"
         >DE</a
       >

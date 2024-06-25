@@ -2,6 +2,7 @@ import { Component, HostListener, inject } from '@angular/core';
 import { TranslationService } from '../../services/translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { CheckLanguageService } from '../../services/check-language.service';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,7 @@ export class HeaderComponent {
   open = false;
 
   translate = inject(TranslationService);
+  languages = inject(CheckLanguageService);
 
   checkSize() {
     if (typeof window !== 'undefined') {
@@ -42,4 +44,16 @@ export class HeaderComponent {
   closeMenu() {
     this.open = false;
   }
+
+  checkEnglish(){
+    this.translate.switchLanguage('en');
+    this.languages.languageEnglish = true;
+
+}
+
+checkGerman(){
+  this.translate.switchLanguage('de');
+  this.languages.languageEnglish = false;
+
+}
 }
